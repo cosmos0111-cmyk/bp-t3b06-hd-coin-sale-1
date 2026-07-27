@@ -1,254 +1,97 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <title>홍대 코인노래방 할인 블로그 | BUDDY'S 노래방</title>
-    <meta name="description" content="친구랑 홍대에서 코인노래방 갈 때 꼭 알아야 할 할인 꿀팁! BUDDY'S 노래방 전화 예약하면 10% 할인. 직접 경험하고 쓴 후기 + 주차 꿀팁까지.">
-    <meta name="keywords" content="홍대 코인노래방 할인, 홍대 노래방 추천, BUDDY'S 노래방, 홍대입구 노래방, 친구랑 노래방, 코인노래방 후기, 홍대 데이트">
-    <link rel="canonical" href="https://t3b06-hd-coin-sale-1.vercel.app/blog">
-    <meta property="og:title" content="홍대 코인노래방 할인 블로그 | BUDDY'S 노래방">
-    <meta property="og:description" content="친구랑 홍대에서 코인노래방 갈 때 꼭 알아야 할 할인 꿀팁! BUDDY'S 노래방 전화 예약하면 10% 할인. 직접 경험하고 쓴 후기 + 주차 꿀팁까지.">
-    <meta property="og:type" content="article">
-    <meta property="og:url" content="https://t3b06-hd-coin-sale-1.vercel.app/blog">
-    <meta property="og:image" content="https://t3b06-hd-coin-sale-1.vercel.app/og-image.jpg">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="홍대 코인노래방 할인 블로그 | BUDDY'S 노래방">
-    <meta name="twitter:description" content="친구랑 홍대에서 코인노래방 갈 때 꼭 알아야 할 할인 꿀팁! BUDDY'S 노래방 전화 예약하면 10% 할인.">
-    <style>
-        /* Reset & Base */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-size: 16px;
-            scroll-behavior: smooth;
-        }
-        body {
-            font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-            background-color: #f5e8c7;
-            color: #1a1a1a;
-            line-height: 1.4;
-            padding: 0 20px;
-        }
-        /* 타이포 그래피 */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Impact', 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-        }
-        h1 {
-            font-size: 2.8rem;
-            border-left: 8px solid #facc15;
-            padding-left: 16px;
-            margin-top: 1.5rem;
-        }
-        h2 {
-            font-size: 2rem;
-            border-bottom: 4px solid #000;
-            display: inline-block;
-            margin-top: 1.2rem;
-        }
-        h3 {
-            font-size: 1.5rem;
-            margin-top: 1rem;
-        }
-        /* 링크 & 텍스트 */
-        a {
-            color: #1a1a1a;
-            text-decoration: none;
-            border-bottom: 2px solid #facc15;
-        }
-        a:hover {
-            background-color: #facc15;
-            color: #000;
-        }
-        p {
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-            line-height: 1.5;
-        }
-        /* 테두리 & 상자 스타일 */
-        .brutal-border {
-            border: 4px solid #000;
-            padding: 16px;
-            box-shadow: 8px 8px 0 #000;
-        }
-        .brutal-border-green {
-            border: 4px solid #22c55e;
-            box-shadow: 8px 8px 0 #22c55e;
-        }
-        /* 레이아웃 */
-        .container {
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        /* 네비게이션 */
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 16px 0;
-            border-bottom: 4px solid #000;
-            margin-bottom: 2rem;
-        }
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-            border: none;
-        }
-        .nav-links {
-            display: flex;
-            gap: 24px;
-        }
-        .nav-links a {
-            font-size: 1.2rem;
-            border: none;
-            padding: 4px 8px;
-        }
-        .nav-links a:hover {
-            background-color: #facc15;
-        }
-        .hamburger-menu {
-            display: none;
-            background: none;
-            border: 2px solid #000;
-            padding: 8px 12px;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        .tel-link {
-            font-size: 1.2rem;
-            background-color: #facc15;
-            padding: 8px 16px;
-            border: 3px solid #000;
-            box-shadow: 4px 4px 0 #000;
-        }
-        .tel-link:hover {
-            background-color: #eab308;
-        }
-        /* 반응형 768px */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 80px;
-                left: 0;
-                width: 100%;
-                background: #f5e8c7;
-                border-bottom: 4px solid #000;
-                padding: 16px;
-                z-index: 10;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .hamburger-menu {
-                display: block;
-            }
-        }
-        /* 블로그 포스트 스타일 */
-        .blog-post {
-            max-width: 850px;
-            margin: 0 auto 3rem;
-        }
-        .blog-meta {
-            display: flex;
-            gap: 16px;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-            border-top: 2px solid #000;
-            border-bottom: 2px solid #000;
-            padding: 8px 0;
-        }
-        .blog-body {
-            background: #e9dcc7;
-            padding: 24px;
-            border: 4px solid #000;
-            box-shadow: 6px 6px 0 #000;
-        }
-        .highlight-box {
-            background: #facc15;
-            border: 4px solid #000;
-            padding: 16px;
-            margin: 1.5rem 0;
-            font-weight: bold;
-        }
-        .btn {
-            display: inline-block;
-            background: #000;
-            color: #facc15;
-            padding: 12px 24px;
-            border: 3px solid #facc15;
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: #facc15;
-            color: #000;
-        }
-        footer {
-            margin-top: 4rem;
-            padding: 24px 0;
-            border-top: 4px solid #000;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<title>홍대 코인노래방 할인 가이드 – 현명한 선택을 위한 실전 팁</title>
+<meta name="description" content="홍대 코인노래방을 이용하기 전, 할인 조건과 필수 체크 포인트를 심도 있게 파헤칩니다. 인원·시간·목적에 맞는 전략을 제시해 현명하게 예산을 절감하세요.">
+<meta name="keywords" content="홍대 코인노래방, 코인노래방 할인, 홍대 노래방 가격, 홍대 노래방 활용법, 홍대 코인노래방 전략">
+<link rel="canonical" href="https://hongdae-song-info.namanavi.com/blog.html">
+<meta name="bpaas-design-system" content="organic-stripe">
+<meta name="bpaas-design-theme" content="kr-organic-stripe">
+<meta property="og:title" content="홍대 코인노래방 할인 – 현명한 선택을 위한 실전 팁">
+<meta property="og:description" content="홍대 코인노래방을 이용하기 전, 할인 조건과 필수 체크 포인트를 심도 있게 파헤칩니다. 인원·시간·목적에 맞는 전략을 제시해 현명하게 예산을 절감하세요.">
+<meta property="og:url" content="https://hongdae-song-info.namanavi.com/blog.html">
+<!-- CSS는 외부 파일에서 로드 -->
+<link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- 네비게이션 -->
-        <nav>
-            <a href="/" class="logo">🎤 BUDDY'S</a>
-            <div class="nav-links" id="navLinks">
-                <a href="/">홈</a>
-                <a href="/blog" style="background:#facc15;">블로그</a>
-                <a href="tel:010-6279-0862" class="tel-link">📞 전화 예약</a>
-            </div>
-            <button class="hamburger-menu" id="hamburgerBtn" aria-label="메뉴 열기">☰</button>
-        </nav>
+<input type="checkbox" id="nav-toggle" hidden>
+<label for="nav-toggle" class="k-nav-y4rs">
+  <h1>홍대 코인노래방 할인 가이드</h1>
+</label>
+<nav class="k-nav-y4rs">
+  <ul>
+    <li><a href="/"><span>홈</span></a></li>
+    <li><a href="/search"><span>노래방 찾기</span></a></li>
+    <li><a href="/tips"><span>이용 팁</span></a></li>
+    <li><a href="/faq"><span>FAQ</span></a></li>
+    <li><a href="/contact"><span>문의</span></a></li>
+  </ul>
+</nav>
 
-        <!-- 블로그 포스트 -->
-        <article class="blog-post">
-            <h1>홍대 코인노래방 할인 꿀팁</h1>
-            <div class="blog-meta">
-                <span>📅 2025.03.15</span>
-                <span>👤 버디</span>
-                <span>📍 홍대입구</span>
-            </div>
-            <div class="blog-body">
-                <p>야, 나 저번주에 친구들이랑 홍대 놀러 갔거든? 근데 코인노래방 가격 보고 깜짝 놀랐어. 30분에 8,000원? 미친거 아냐? 😅 근데 우연히 알게 된 곳이 있는데, 이름하여 <strong>BUDDY'S 노래방</strong>.</p>
+<section class="n-card-me56">
+  <div class="container">
+    <h2>왜 할인 조건을 꼼꼼히 따져야 할까?</h2>
+    <p>홍대는 문화와 엔터테인먼트가 밀집한 지역이라 코인노래방도 다양하게 포진돼 있다. 하지만 “가격이 저렴하다”는 이유만으로 선택한다면, 예상치 못한 추가 비용에 당황하게 된다. 이 글은 그런 함정을 피하고, 진정한 가성비를 잡아내는 데 초점을 맞춘다.</p>
+    <p>여기서는 할인 종류별 특징, 적용 시점, 그리고 실제 이용 시 검증해야 할 체크리스트를 제시한다. 당신이 혼자 노래를 부르든, 팀과 파티를 즐기든, 목적에 맞는 최적의 플랜을 설계하도록 돕는다.</p>
+  </div>
+</section>
 
-                <p>여기가 진짜 대박인 게, <strong>전화 예약</strong>만 하면 <strong>10% 할인</strong>을 해줘. 게다가 친구랑 같이 가면 음료 서비스도 준대. 내가 직접 해봤는데, 진짜 할인 적용됐어. 예약할 때 '블로그 보고 왔어요'라고 말하면 맥주도 한 잔 서비스로 준다니까? (아직 확인은 안 해봤지만 주인분이 그렇다고 하더라)</p>
+<section class="n-card-me56">
+  <div class="container">
+    <h2>대표적인 할인 유형</h2>
+    <p>1) <strong>시간대별 할인</strong> – 새벽 혹은 심야에 이용하면 기본 요금보다 10~20% 저렴한 경우가 많다. 이때는 기계 유지 보수 비용이 낮아지는 점을 이용한 전략이다. 단, 소음 제한이 심해 음량 조절에 제한이 있을 수 있다.</p>
+    <p>2) <strong>인원수 할인</strong> – 4인 이상 팀을 예약하면 고정 요금에 비례해 할인율이 적용된다. 이는 다수 이용자가 동시에 결제하는 번거로움을 줄이려는 방침이다. 하지만 사전 예약이 필수이며, 인원 변동 시 추가 비용이 발생할 수 있다.</p>
+    <p>3) <strong>멤버십/쿠폰</strong> – 현지 대학생이나 청년층을 대상으로 발행되는 멤버십 카드는 1시간당 5%~15%를 할인한다. 쿠폰은 SNS 이벤트 or 앱 푸시를 통해 제한된 기간에만 사용할 수 있다. 유효 기간과 적용 대상 제한을 반드시 확인하라.</p>
+    <p>4) <strong>특정 목적 할인</strong> – 연습용(연습실)과 파티용(프라이빗룸)으로 구분해 별도 할인 정책을 운영한다. 연습용은 시간당 요금이 저렴하고, 파티용은 최소 이용 시간과 최소 인원 조건이 있다. 목적에 맞는 옵션을 선택하지 않으면 불필요한 비용이 발생한다.</p>
+  </div>
+</section>
 
-                <div class="highlight-box">
-                    🎯 꿀팁: 전화 예약 시 "블로그 보고 왔어요" 한마디 추가하면 서비스 맥주!<br>
-                    📞 <a href="tel:010-6279-0862" style="border:none; background:#000; color:#facc15;">010-6279-0862</a>
-                </div>
+<section class="n-card-me56">
+  <div class="container">
+    <h2>인원·시점·목적별 선택 전략</h2>
+    <p><strong>소규모 개인 이용</strong> – 1~2인일 경우, 시간대별 할인을 최우선 검토한다. 심야 30분 추가 사용이 무료인 경우가 많아, 최소 시간 이상 머무를 때만 예약한다.</p>
+    <p><strong>중규모 팀 연습</strong> – 3~5인 팀이면 인원수 할인이 유리하지만, 사전 예약을 통해 연습실을 확보해야 한다. 이때는 주중 평일을 노리는 것이 비용 절감에 가장 효과적이다.</p>
+    <p><strong>대규모 파티</strong> – 6인 이상 파티는 프라이빗룸을 선택하고, 최소 이용 시간(2시간)을 초과하지 않도록 사전에 계획한다. 파티용 할인은 보통 “1시간당 1인당 고정 요금” 형태이므로, 인원 대비 요금을 계산해 보는 것이 중요하다.</p>
+    <p>각 시나리오마다 반드시 확인해야 할 기준이 있다. 예를 들어, “추가 시간당 요금”, “음악 선택 제한”, “음식·음료 반입 가능 여부” 등을 미리 체크해 두면, 현장에서 놀라지 않는다.</p>
+  </div>
+</section>
 
-                <p>위치는 홍대입구역 3번 출구에서 걸어서 3분? 완전 가깝고, 24시간 운영이라 새벽에 가도 노래방 불 다 켜져 있어. 주차도 가능한데, <strong>전화 예약 시 주차 2시간 무료</strong>라는 소문이… (이건 가서 확인해봐야 할 듯)</p>
+<section class="n-card-me56">
+  <div class="container">
+    <h2>현장 체크리스트 – 놓치지 말아야 할 7가지</h2>
+    <ol class="n-txt-jr3t">
+      <li>프로모션 적용 여부 – 입구에 부착된 포스터나 QR 코드 스캔을 통해 할인 조건을 확인한다.</li>
+      <li>추가 요금 구조 – 기본 30분 후 추가 15분당 비용이 어떻게 책정되는지 사전에 물어본다.</li>
+      <li>예약 취소 정책 – 예약 취소 시 환불 가능한지, 위약금이 있는지 확인한다.</li>
+      <li>음향 장비 상태 – 마이크와 스피커의 품질을 빠르게 점검한다.</li>
+      <li>음원 제공 방식 – 자체 기계, 모바일 앱, 혹은 외부 USB 사용이 가능한지 확인한다.</li>
+      <li>음량 제한 시간 – 밤 시간대에 소음 규제 시간이 있는지 미리 파악한다.</li>
+      <li>부가 서비스 – 음료, 스낵, 포토부스 등 추가 옵션이 있는 경우 가격 대비 가치를 검토한다.</li>
+    </ol>
+  </div>
+</section>
 
-                <p>곡도 엄청 많아. 최신곡은 기본이고, 옛날 노래도 잘 돼 있어. 나는 90년대 히트곡 위주로 불렀는데, 진짜 떼창 가능. 친구랑 둘이 2시간 불렀는데 결제 금액 보고 또 놀랐음. 할인 덕분에 2만원도 안 나왔어.</p>
+<section class="n-card-me56">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="q-wrap-ad1k">
+      <h3>Q1. 멤버십 할인은 언제까지 유효한가요?</h3>
+      <p>대부분의 멤버십은 발급일로부터 6개월 동안 유효하지만, 프로모션에 따라 1년까지 연장되는 경우도 있다. 사용 전 앱 내 ‘멤버십 관리’ 페이지에서 만료일을 반드시 확인한다.</p>
+    </div>
+    <div class="q-wrap-ad1k">
+      <h3>Q2. 그룹 예약 시 인원 변경은 가능한가요?</h3>
+      <p>예약 후 30분 이내라면 인원 변경이 허용되지만, 추가 인원 발생 시 차액을 즉시 결제해야 한다. 인원 감소는 환불이 불가능하니 사전에 정확히 파악하고 예약한다.</p>
+    </div>
+    <div class="q-wrap-ad1k">
+      <h3>Q3. 심야 할인은 정확히 언제부터 적용되나요?</h3>
+      <p>일반적으로 오후 10시부터 새벽 5시까지 적용된다. 다만 일부 업소는 오후 11시부터 시작하니, 현장표지판을 확인하거나 직원에게 직접 물어보는 것이 안전하다.</p>
+    </div>
+  </div>
+</section>
 
-                <p>만약 너도 홍대에서 코인노래방 갈 계획 있으면, 꼭 전화 예약 하고 가. 예약 없이 가면 할인 못 받을 수도 있으니까. 그리고 시간대는 <strong>오후 2시~5시</strong>가 가장 조용하고 좋더라. 주말 저녁은 사람 많아서 방 빨리 차니까 참고!</p>
-
-                <p>마지막으로, 친구랑 같이 가면 더 재밌어. 혼자 가도 되지만, 2인 이상이면 음료 서비스도 있고, 노래방 분위기가 확 살아. 나는 다음주에도 또 가려고 벌써 예약했음 ㅋㅋ</p>
-
-                <p style="margin-top:2rem;">👉 지금 바로 전화 걸어서 할인 받자!</p>
-                <a href="tel:010-6279-0862" class="btn">📞 010-6279-0862 전화 예약</a>
-            </div>
-        </article>
-
-        <!-- 푸터 -->
-        <footer>
-            <p
+<footer class="k-nav-y4rs">
+  <p>© 2026 홍대 코인노래방 정보센터. 모든 권리 보유.</p>
+</footer>
 </body>
 </html>

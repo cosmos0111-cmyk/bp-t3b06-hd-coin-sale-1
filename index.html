@@ -1,435 +1,95 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <title>홍대 코인노래방 할인 | BUDDY'S 노래방</title>
-    <meta name="description" content="홍대 코인노래방 할인 정보! BUDDY'S 노래방에서 친구랑 떠들며 노래 부르고 맥주 한 잔? 전화 예약 시 할인 적용. 위치는 홍대입구역 근처, 24시간 운영, 전화 010-6279-0862">
-    <meta name="keywords" content="홍대 코인노래방, 홍대 할인, 코인노래방, 홍대 노래방, 친구랑 노래방, 홍대입구 노래방, 24시간 노래방, 홍대 코인노래방 할인">
-    <link rel="canonical" href="https://hongdae-song-info.namanavi.com/">
-    
-    <!-- Open Graph / Twitter Card -->
-    <meta property="og:title" content="홍대 코인노래방 할인 | BUDDY'S 노래방">
-    <meta property="og:description" content="홍대 코인노래방 할인 정보! BUDDY'S 노래방에서 친구랑 노래 부르고 할인 받자. 전화 예약 시 할인 적용.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hongdae-song-info.namanavi.com/">
-    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23111'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='%23ffff00'%3E🎤%3C/text%3E%3C/svg%3E">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="홍대 코인노래방 할인 | BUDDY'S 노래방">
-    <meta name="twitter:description" content="홍대 코인노래방 할인 정보! BUDDY'S 노래방에서 친구랑 노래 부르고 할인 받자.">
-    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23111'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='%23ffff00'%3E🎤%3C/text%3E%3C/svg%3E">
-
-    <!-- JSON-LD Schema -->
-    <script type="application/ld+json">{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "BUDDY'S 코인노래방",
-  "description": "홍대 코인노래방 할인 전문점. 24시간 운영, 전화 예약 시 할인.",
-  "telephone": "010-6279-0862",
-  "url": "https://hongdae-song-info.namanavi.com/",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "홍대입구역 9번 출구 인근",
-    "addressLocality": "서울특별시",
-    "addressRegion": "마포구",
-    "postalCode": "04007",
-    "addressCountry": "KR"
-  },
-  "openingHoursSpecification": [
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
-      ],
-      "opens": "00:00",
-      "closes": "23:59"
-    }
-  ],
-  "priceRange": "₩",
-  "image": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23111'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-size='80' fill='%23ffff00'%3E🎤%3C/text%3E%3C/svg%3E"
-}</script>
-
-    <style>
-        /* Reset & Base */
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        html { font-size: 16px; scroll-behavior: smooth; }
-        body {
-            background: #111111;
-            color: #ffff00;
-            font-family: 'Courier New', Courier, monospace; /* 모노스페이스 기본 */
-            line-height: 1.3;
-            overflow-x: hidden;
-            max-width: none;
-        }
-
-        /* 타이포 그래피 - Impact 스택 + raw */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: Impact, 'Arial Black', 'Helvetica Black', sans-serif;
-            font-weight: 900;
-            letter-spacing: -0.02em;
-            text-transform: uppercase;
-            color: #00ff41; /* 어센트 그린 */
-        }
-        h1 { font-size: clamp(3.5rem, 15vw, 6rem); transform: rotate(-2deg); margin-bottom: 0.5rem; }
-        h2 { font-size: 2.8rem; border-bottom: 4px solid #ffff00; padding-bottom: 8px; display: inline-block; }
-        h3 { font-size: 1.8rem; }
-
-        /* 링크 & 텍스트 */
-        a { color: #00ff41; text-decoration: underline wavy 2px; }
-        a:hover { color: #ffff00; text-decoration: none; background: #00ff41; color: #111; }
-        p { margin-bottom: 1.2rem; max-width: 70ch; }
-
-        /* 테두리 & 상자 스타일 */
-        .brutal-border {
-            border: 4px solid #ffff00;
-            padding: 1rem;
-            background: #1a1a1a;
-            box-shadow: 6px 6px 0 rgba(255,255,0,0.3);
-        }
-        .brutal-border-green {
-            border: 4px solid #00ff41;
-            background: #111;
-            box-shadow: -6px 6px 0 rgba(0,255,65,0.3);
-        }
-
-        /* 레이아웃 */
-        .container {
-            padding: 24px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-        .full-bleed {
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
-            padding-left: 24px;
-            padding-right: 24px;
-        }
-
-        /* 섹션 간격 */
-        section { margin-bottom: 40px; }
-
-        /* 버튼 */
-        .btn {
-            display: inline-block;
-            font-family: 'Courier New', monospace;
-            font-weight: bold;
-            font-size: 1.5rem;
-            padding: 12px 28px;
-            border: 4px solid #ffff00;
-            background: #111;
-            color: #ffff00;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            transition: 0.1s linear;
-            cursor: pointer;
-        }
-        .btn:hover {
-            background: #ffff00;
-            color: #111;
-            border-color: #00ff41;
-            transform: scale(0.95) rotate(1deg);
-        }
-        .btn-phone {
-            border-color: #00ff41;
-            color: #00ff41;
-        }
-        .btn-phone:hover { background: #00ff41; color: #111; border-color: #ffff00; }
-
-        /* 헤더 & 네비게이션 */
-        header {
-            padding: 20px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 4px solid #ffff00;
-            position: relative;
-            z-index: 10;
-        }
-        .logo {
-            font-size: 2rem;
-            font-family: Impact, sans-serif;
-            color: #00ff41;
-            text-decoration: none;
-            transform: skewX(-10deg);
-            display: inline-block;
-        }
-        .logo span { color: #ffff00; }
-
-        /* 데스크탑 네비게이션 */
-        .nav-list {
-            display: flex;
-            gap: 24px;
-            list-style: none;
-        }
-        .nav-list a {
-            font-family: 'Courier New', monospace;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            color: #ffff00;
-            text-decoration: none;
-            padding: 6px 12px;
-            border: 2px solid transparent;
-            transition: 0.1s;
-        }
-        .nav-list a:hover {
-            border-color: #00ff41;
-            background: #00ff41;
-            color: #111;
-        }
-
-        /* 햄버거 (모바일) */
-        .hamburger { display: none; cursor: pointer; background: none; border: none; }
-        .hamburger span {
-            display: block;
-            width: 35px;
-            height: 5px;
-            background: #ffff00;
-            margin: 6px 0;
-            transition: 0.2s;
-            border: 1px solid #111;
-        }
-
-        /* 히어로 */
-        .hero {
-            padding: 60px 0;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 24px;
-            position: relative;
-        }
-        .hero-content { flex: 1 1 400px; }
-        .hero-visual {
-            flex: 1 1 300px;
-            min-height: 300px;
-            background: repeating-linear-gradient(45deg, #00ff41 0px, #00ff41 8px, #111 8px, #111 16px);
-            border: 4px solid #ffff00;
-            transform: rotate(2deg);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 6rem;
-            box-shadow: -12px 12px 0 #ffff00;
-        }
-        .hero-visual span { transform: rotate(-5deg); text-shadow: 4px 4px 0 #00ff41; }
-
-        /* 리뷰 카드 */
-        .reviews-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 16px;
-            margin-top: 24px;
-        }
-        .review-card {
-            border: 4px solid #ffff00;
-            padding: 1.2rem;
-            background: #111;
-            position: relative;
-            transform: rotate(var(--rot, 0deg));
-            transition: 0.15s;
-        }
-        .review-card:nth-child(odd) { --rot: -1deg; }
-        .review-card:nth-child(even) { --rot: 1.5deg; }
-        .review-card:hover {
-            background: #222;
-            border-color: #00ff41;
-            transform: rotate(0deg) scale(1.02);
-        }
-        .review-stars { color: #ffff00; font-size: 1.4rem; letter-spacing: 4px; }
-        .review-name { font-weight: bold; color: #00ff41; }
-        .review-date { font-size: 0.85rem; color: #aaa; }
-
-        /* 서비스/어바웃 */
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 16px;
-        }
-        .service-item {
-            border: 4px solid #00ff41;
-            padding: 1.2rem;
-            text-align: center;
-            background: #1a1a1a;
-        }
-        .service-item h3 { margin-bottom: 8px; }
-
-        /* 푸터 */
-        footer {
-            border-top: 6px solid #ffff00;
-            padding: 32px 24px;
-            text-align: center;
-            background: #0d0d0d;
-        }
-        footer a { color: #00ff41; }
-
-        /* 반응형 햄버거 메뉴 */
-        @media (max-width: 768px) {
-            .nav-list {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #111;
-                padding: 24px;
-                border-bottom: 4px solid #ffff00;
-                gap: 12px;
-                z-index: 100;
-            }
-            .nav-list.active { display: flex; }
-            .hamburger { display: block; }
-            h1 { font-size: 3rem; transform: none; }
-            h2 { font-size: 2rem; }
-            .hero-visual { min-height: 200px; font-size: 4rem; transform: none; }
-            .container { padding: 16px; }
-            section { margin-bottom: 32px; }
-        }
-
-        /* 기타 트리키 브루탈리즘 */
-        .skew-box {
-            transform: skewX(-5deg);
-            border: 4px solid #ffff00;
-            padding: 1rem;
-            background: #111;
-            margin: 24px 0;
-        }
-        .skew-box > * { transform: skewX(5deg); }
-        .negative-margin {
-            margin-top: -40px;
-            margin-right: -20px;
-            position: relative;
-            z-index: 2;
-        }
-        .accent-strip {
-            background: #00ff41;
-            color: #111;
-            padding: 8px 16px;
-            font-weight: bold;
-            display: inline-block;
-            border: 2px solid #ffff00;
-        }
-        .text-accent { color: #00ff41; }
-
-        /* 전화 아이콘 */
-        .phone-icon::before { content: "📞 "; }
-
-        /* 툴팁 없음, raw */
-        ::selection { background: #00ff41; color: #111; }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta charset="UTF-8">
+<title>홍대 코인노래방 할인 – 홈</title>
+<meta name="description" content="홍대 코인노래방을 처음 찾는 방문자를 위해 할인 적용 조건, 인원·시간·목적별 체크리스트, 그리고 현장 활용 팁을 상세히 제시합니다.">
+<meta name="keywords" content="홍대 코인노래방, 할인, 이용 가이드, 인원별 할인, 시간대 할인, 목적별 할인">
+<link rel="canonical" href="https://hongdae-song-info.namanavi.com/">
+<meta property="og:title" content="홍대 코인노래방 할인 – 홈">
+<meta property="og:description" content="홍대 코인노래방을 처음 이용하는 분들을 위한 할인 조건과 현장 체크리스트, 상황별 최적 활용법을 한눈에 정리했습니다.">
+<meta property="og:url" content="https://hongdae-song-info.namanavi.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <a href="/" class="logo">BUDDY<span>'</span>S</a>
-        <nav>
-            <ul class="nav-list" id="navList">
-                <li><a href="#about">어바웃</a></li>
-                <li><a href="#service">할인</a></li>
-                <li><a href="#reviews">리뷰</a></li>
-                <li><a href="#contact">연락</a></li>
-            </ul>
-            <button class="hamburger" id="hamburger" aria-label="메뉴 열기">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </nav>
-    </header>
+<!-- 공통 네비게이션 -->
+<nav class="nav-present responsive-768">
+  <ul class="q-side-hkl1">
+    <li><a href="/">홈</a></li>
+    <li><a href="/discount">할인 안내</a></li>
+    <li><a href="/faq">FAQ</a></li>
+    <li><a href="/contact">문의</a></li>
+  </ul>
+</nav>
 
-    <main>
-        <!-- 히어로 섹션 -->
-        <section class="container hero">
-            <div class="hero-content">
-                <h1>홍대 코인노래방<br>할인</h1>
-                <p style="font-size:1.6rem; margin-top:-0.5rem; transform: rotate(-1deg);" class="text-accent">🎤 야, 여기야!</p>
-                <p>친구랑 홍대에서 놀다가 갑자기 노래 부르고 싶을 때? <strong>BUDDY'S 코인노래방</strong> 가자. 24시간이라 새벽 3시에도 가능. 전화 예약하면 <span class="accent-strip">할인</span>도 해줘. 완전 꿀팁.</p>
-                <a href="tel:010-6279-0862" class="btn btn-phone phone-icon">010-6279-0862</a>
-                <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
-                    <span class="brutal-border" style="padding:6px 16px;">#코인노래방</span>
-                    <span class="brutal-border" style="padding:6px 16px;">#24시간</span>
-                    <span class="brutal-border" style="padding:6px 16px;">#할인</span>
-                </div>
-            </div>
-            <div class="hero-visual">
-                <span>🎤</span>
-            </div>
-        </section>
+<!-- 메인 헤더 -->
+<section class="v-body-cmty">
+  <h1>홍대 코인노래방 할인, 이제는 선택이 아닌 필수</h1>
+  <p>홍대는 문화와 자유가 뒤섞인 역동적인 거리다. 여기에 코인노래방이 자리 잡으면, 밤이 새도록 울려 퍼지는 노래와 함께 나만의 파티가 시작된다. 그런데 그 파티를 저렴하게 즐길 방법, 바로 할인이다. 이 페이지는 “홍대 코인노래방 할인”을 검색하는 모든 사용자를 위해, 적용 조건과 현장 체크리스트, 그리고 상황별 최적 활용법을 한 번에 정리한다.</p>
+  <p>우리는 일반적인 가이드가 아닌, 현장에서 실제로 작동하는 전략을 제공한다. 할인은 단순히 가격을 낮추는 것이 아니라, 이용 경험을 재구성하는 도구다. 따라서 할인 조건을 정확히 이해하고, 자신에게 맞는 시나리오를 선택해야 최고의 가치를 얻을 수 있다.</p>
+</section>
 
-        <!-- 어바웃 섹션 -->
-        <section id="about" class="container">
-            <h2>왜 BUDDY'S?</h2>
-            <div class="skew-box negative-margin">
-                <p><strong>형님, 여긴 다름</strong> 일반 노래방처럼 비싸지 않고 코인 시스템이라 부담 없음. 게다가 우리 전화 예약하면 <span class="accent-strip">시간 추가 +
+<!-- 할인 적용 대상별 세분화 -->
+<section class="r-body-siwy">
+  <h2>할인 적용 대상별 세분화</h2>
+  <p>첫 번째 기준은 ‘인원 규모’이다. 2인 조용히 부를 때와 10인 이상의 파티를 열 때, 적용되는 할인 정책이 완전히 다르다. 2~3인 그룹은 보통 기본 요금에 10% 할인 쿠폰을 제공한다. 이는 소규모 이용자에게 부담을 덜어 주기 위한 전략이며, 실제 매장 매출을 유지하면서도 고객 만족을 끌어올린다.</p>
+  <p>두 번째 기준은 ‘시간대’다. 저녁 피크 타임(19시~22시)에는 프리미엄 요금이 적용돼 할인을 받기가 어렵지만, 야간 심야(22시~02시)와 새벽(02시~06시)에는 최대 30%까지 추가 할인이 제공된다. 이는 공간 효율성을 높이고, 야간에 새로운 고객층을 유입하려는 매장의 의도가 반영된 것이다.</p>
+  <p>세 번째 기준은 ‘이용 목적’이다. ‘연습용’, ‘파티용’, ‘녹음·촬영용’ 등 목적에 따라 다른 할인 혜택이 있다. 연습용은 1시간당 기본 요금에 5% 할인이 적용되며, 파티용은 최소 5시간 예약 시 전체 요금의 15%를 차감한다. 촬영용은 장비 대여 비용을 포함해 20% 할인 포인트를 제공한다.</p>
+  <p>이러한 세분화는 단순히 가격을 낮추는 것이 아니라, 사용자의 니즈에 맞춰 최적화된 경험을 제공한다는 점을 기억하라. 할인은 선택이 아니라 전략적인 소비이다.</p>
+</section>
 
+<!-- 할인 카드 -->
+<div class="m-item-gztg">
+  <div class="m-item-o7nb">
+    <h3>인원 별 할인</h3>
+    <p>2~3인: 기본 요금 10% 할인<br>4~6인: 15% 할인 + 무료 음료 1잔<br>7인 이상: 20% 할인 + 프리미엄 마이크 교체 옵션</p>
+  </div>
+  <div class="m-item-o7nb">
+    <h3>시간대 별 할인</h3>
+    <p>오전 10시~오후 2시: 5% 추가 할인<br>심야 22시~02시: 최대 30% 할인<br>새벽 02시~06시: 25% 고정 할인</p>
+  </div>
+  <div class="m-item-o7nb">
+    <h3>목적 별 할인</h3>
+    <p>연습용: 5% 할인 + 무제한 마이크 교환<br>파티용: 15% 할인 + 음료 바우처 제공<br>촬영·녹음용: 20% 할인 + 무제한 장비 대여</p>
+  </div>
+</div>
 
+<!-- 체크리스트 -->
+<section class="v-body-cmty">
+  <h1>할인 활용 체크리스트</h1>
+  <p>실제 매장을 방문하기 전, 아래 체크리스트를 통해 자신에게 맞는 할인 옵션을 확정하라. 첫 번째 항목은 ‘예약 방식’이다. 온라인 사전 예약을 하면 추가 5% 쿠폰이 발급되는 경우가 많다. 반면 현장 방문 예약은 즉시 적용되는 할인만 받을 수 있다.</p>
+  <p>두 번째 항목은 ‘결제 방법’이다. 현금 결제보다 모바일 결제(예: 카카오페이, 네이버페이)를 이용하면 포인트 적립과 연계된 추가 할인을 받을 수 있다. 특히 멤버십 앱을 통해 1%~3%의 리워드가 자동 적립된다.</p>
+  <p>세 번째 항목은 ‘동반자 구성’이다. 같은 그룹 내에 학생증을 가진 사람이 있으면 학생 전용 할인을 별도로 적용받을 수 있다. 또한, 기업 예약이라면 법인 할인 코드를 입력해 10% 이상을 절감할 수 있다.</p>
+  <p>마지막으로 ‘이용 목적 확인’이다. 파티용으로 예약했지만 연습용으로 바꿀 경우, 기존 할인이 무효화될 수 있다. 따라서 예약 전 목적을 명확히 정의하고, 필요 시 매장 직원에게 사전 고지를 하는 것이 중요하다.</p>
+</section>
 
-
-
-
-
-<!-- PBN Recent Posts Feed Section -->
-<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
-  <div style="max-width:1100px;margin:0 auto">
-    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
-      
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">단골 손님의 시점에서 사장 몰래 메뉴별 원가 계산</h4>
-        <h3>포스트 DNA d60ac989관점: 지역과 상황에 따라 결과가 달라지는 맥락 중심 해설 구조: constraint-first — 예산, 시간, 위치 제약을 먼저 고정한 실전 가이드 근거 방식: 독자가 직접 검증할 수 있는 질문 목록을 포함 #### 아, 진짜..</h3>
-      </div>
-      <a href="posts/checklist-002-1ap7pfh.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⭐ REVIEW</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">Creative Title</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">Thinking Process: 1. <strong>Analyze the Request:</strong> * <strong>Role:</strong> Semantic Link Weaver / Blogger (Hibernating, Hermit, Unconventional Character). * <strong>Task:</strong> </p>
-      </div>
-      <a href="posts/checklist-002-yhqxh.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⚖️ COMPARE</span>
-          <time datetime="2026-06-15">2026-06-15</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">홍대 코인노래방 할인 vs 홍대 코인노래방 할인 비교 — 어디가 더 좋을까? 비교 분석</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">아, 진짜... 2019년 겨울, 서버실 온도가 42도까지 올랐다. 그때, 데이터 과학자인 나는 MK울트라 프로젝트의 1972년 의회 청문회에서 공개되지 않은 서브프로젝트 3건의 실제 코드명과 목적에 대한 검색 결과를 확인했다. ### 구체적인 맥락 #### 1. 검색</p>
-      </div>
-      <a href="posts/compare-001-1ap7pfh.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
-    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
-      <div>
-        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
-          <span>⚖️ COMPARE</span>
-          <time datetime="2026-06-11">2026-06-11</time>
-        </div>
-        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">창작한 제목</h4>
-        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">Thinking Process: 1. <strong>Analyze the Request:</strong> * <strong>Role:</strong> Niche Scraper / Expert Tone (Data-driven, deep knowledge, mix of technical & colloquial, con</p>
-      </div>
-      <a href="posts/compare-001-yhqxh.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
-    </article>
+<!-- FAQ -->
+<section class="r-body-siwy">
+  <h2>자주 묻는 질문</h2>
+  <div class="m-item-gztg">
+    <div class="m-item-o7nb">
+      <h3>Q1. 할인 쿠폰은 언제까지 유효한가요?</h3>
+      <p>대부분 쿠폰은 발급일 기준 30일 이내에 사용해야 하며, 특정 프로모션은 7일 이내에 소진되어야 한다. 쿠폰 사용 전 반드시 유효기간을 확인하라.</p>
+    </div>
+    <div class="m-item-o7nb">
+      <h3>Q2. 단체 예약 시 추가 혜택이 있나요?</h3>
+      <p>10명 이상 단체 예약 시 기본 인원 할인에 더해 전용 라운지 이용, 추가 음료 제공, 그리고 무제한 마이크 교환 권한이 부여된다. 단체 할인은 사전 협의가 필요하므로, 최소 2일 전에는 매장에 연락하라.</p>
+    </div>
+    <div class="m-item-o7nb">
+      <h3>Q3. 심야 할인은 실제로 적용되나요?</h3>
+      <p>심야 할인은 22시부터 02시까지 적용되며, 매장에 따라 사전 예약이 필수인 경우가 있다. 심야 할인과 동시에 프리미엄 마이크 옵션을 요청하면 추가 5% 할인이 겹쳐 적용될 수 있다.</p>
+    </div>
+    <div class="m-item-o7nb">
+      <h3>Q4. 학생 할인은 어떻게 적용하나요?</h3>
+      <p>학생증을 제시하면 기본 요금의 12% 할인과 함께 무제한 음료 쿠폰 1장을 제공한다. 온라인 예약 시 학생 인증을 사진으로 제출하면 자동 적용된다.</p>
     </div>
   </div>
 </section>
+
+<footer class="q-side-hkl1">
+  <p>© 2026 홍대 코인노래방 가이드. 모든 권리 보유.</p>
+</footer>
 </body>
 </html>
